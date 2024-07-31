@@ -2,6 +2,7 @@ console.log("Script running...");
 
 document.querySelector('.cross').style.display = 'none';
 document.querySelector('.hamburger_logo').addEventListener("click", () => {
+        document.querySelector(".sidebar").style.height="109vh"
     document.querySelector('.sidebar').classList.toggle('sidebarGo'); 
     if (document.querySelector('.sidebar').classList.contains('sidebarGo')) {
         document.querySelector('.ham').style.display = 'inline';
