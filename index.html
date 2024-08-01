@@ -7,6 +7,8 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
      <link rel="stylesheet" href="stylenik.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <div class="container">
@@ -47,31 +49,66 @@
         <div class="content">
             <div class="Navbar">
                <div class="hamburger_logo">
-                <i class="fa-solid fa-bars ham"></i>
-                <i class="fa-solid fa-xmark cross"></i>
-                <img id="logo" src="Images/Uptoskills1.jpg" alt="Uptoskills Logo">
+                  <i class="fa-solid fa-bars ham"></i>
+                   <i class="fa-solid fa-xmark cross"></i>
+                  <img id="logo" src="Images/Uptoskills1.jpg" alt="Uptoskills Logo">
                </div>
              
                <div class="Nav-items">
                 <div class="nav-left">
                     <i class="fa-solid fa-credit-card" ></i>
-                    <a href="#" class="item">
-                Available credits</a>
+                    <a href="#" class="item">Available credits</a>
                 </div>
 
                 <div class="nav-right">
                     <i class="fa-solid fa-tools"></i> 
-              <a href="#" class="item">
-                Support</a>
-                </div>
-                <div>
-               <img class="Ui" src="Images/userimage.png" height="45" width="45">
-
-                </div>
-                
-            
+                    <a href="#" class="item"> Support</a>
                </div>
-             </div>
+            
+             <div>
+                <!-- <img src="Images/userimage.png" alt="Header Image" height="40px" width="40px" > -->
+
+
+             <div class="dropdown">
+                 <img src="/Images/userimage.png" id="mainImg" alt="Header Image"/>
+                <div class="dropdown-content show hide" id="showItem">
+                    <div class="picon" data-value="Edit Profile"><i class="fa-solid fa-user"></i>Edit Profile</div>
+                    <div  class="picon" data-value="setting"> <i class="fa-solid fa-gear"></i>Setting & Privacy</div>
+                    <div  class="picon" data-value="logout"><i class="fa-solid fa-right-from-bracket"></i>Logout</div>
+                     </div>
+                </div>
+
+    <p id="output"></p>
+                
+                    <!-- <img class="Ui" id="user-pic" src="Images/userimage.png" onclick="togglepic()" height="45" width="45"> -->
+               
+                    <!-- <div class="sub-manu-wrap" id="sub-manu"> 
+                       <div class="sub-manu">
+                          <div class="user-info">
+                             <img src="Images/user-pic.png">
+                             <h3>User Name</h3>
+                          </div>
+                          <hr>
+                          <a href="#" class="sub-manu-link">
+                             <img src="Images/setting3.png">
+                             <p>Setting & Privacy</p>
+                             <span>></span>
+                          </a>
+                          <a href="#" class="sub-manu-link">
+                             <img src="Images/support.png">
+                              <p>Help & Support</p>
+                              <span>></span>
+                          </a>
+                          <a href="#" class="sub-manu-link">
+                             <img src="Images/logout.png">
+                             <p>logout</p>
+                              <span>></span>
+                           </a>
+                       </div>
+                   </div> -->
+               </div>
+            </div>
+        </div>
 
                 
 
@@ -90,16 +127,16 @@
                 <div class="Jobs_form">
                 <p class="sz-24 first-job-text">Post your first Job</p>
 
-                  <div class="blank-form">
-                    <img src="Images/plus.jpg" alt="plus" />
-                    <p class="sz-20">Blank Form</p>
-                    <p class="Jobs_margin">
-                      Use our blank form to create your job and fill manually
-                    </p>
-                    <div class="Jobs_form-btn Jobs_start">
-                      <span id="Jobs_blankform" onclick="window.location.href='./jobform/jobdetails.html '">Form</span>
-                    </div>
-                  </div>
+                    <div class="blank-form">
+                        <img src="Images/plus.jpg" alt="plus" />
+                        <p class="sz-20">Blank Form</p>
+                        <p class="Jobs_margin">
+                          Use our blank form to create your job and fill manually
+                        </p>
+                        <div class="Jobs_form-btn Jobs_start">
+                         <span id="Jobs_blankform" onclick="window.location.href='./jobform/jobdetails.html '">Form</span>
+                        </div>
+                       </div>
                   </div>
                 </div>
               </div>

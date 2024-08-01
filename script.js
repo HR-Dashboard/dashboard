@@ -1,3 +1,21 @@
+const showItembtn = document.getElementById("mainImg");
+
+showItembtn.addEventListener("click",()=>{
+    document.getElementById("showItem").classList.toggle("hide");
+    
+})
+
+
+document.querySelectorAll('.dropdown-content div').forEach(item => {
+    item.addEventListener("click", function(e) {
+        const selectedValue = e.currentTarget.getAttribute('data-value');
+        document.getElementById('output').textContent = `You selected:${selectedValue}`;
+    });
+});
+
+
+
+
 console.log("Script running...");
 
 document.querySelector('.cross').style.display = 'none';
@@ -9,9 +27,8 @@ document.querySelector('.hamburger_logo').addEventListener("click", () => {
         document.querySelector('.cross').style.display = 'none';
     } else {
         document.querySelector('.ham').style.display = 'none';
-        setTimeout(() => {
-            document.querySelector('.cross').style.display = 'inline';
-        }, 300);
+        document.querySelector('.cross').style.display = 'inline';
+
     }
 });
 
@@ -33,5 +50,25 @@ toggleButton.addEventListener('click',() =>{
 })
 
 
+// let subManu= document.getElementById("subManu");
+
+// function togglepic(){
+//     subManu.classList.toggle("open-manu");
+// }
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const userOptions = document.getElementById('user-options');
+
+//     userOptions.addEventListener('change', () => {
+//         const selectedOption = userOptions.value;
+//         if (selectedOption === 'settings') {
+//             window.location.href = '/settings'; // Adjust the URL as needed
+//         } else if (selectedOption === 'logout') {
+//             // Handle logout action
+//             alert('Logging out...');
+//             // Implement actual logout logic here
+//         }
+//     });
+// });
 
 
